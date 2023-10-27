@@ -1,0 +1,29 @@
+html{
+  height: 100vh;
+  }
+  
+  body{
+      width: 100%;
+      height: 100vh;
+      background-color: #ffffff;
+      font-family: gothambook;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      }
+
+:root {
+  /* fonts */
+  --font-didact-gothic: "Didact Gothic";
+  --font-barlow: Barlow;
+
+  /* font sizes */
+  --font-size-7xl: 26px;
+  --font-size-11xl: 30px;
+  --font-size-21xl: 40px;
+
+  /* Colors */
+  --color-black: #000;
+  --color-gray-100: rgba(123, 121, 121, 0.15);
+  --color-white: #fff;
+}

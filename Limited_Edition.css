@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'montserrat';
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #D0D4D5;
+    position: relative;
+}
+#nav{
+
+    height: 130px; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    gap: 60px;
+    position: fixed;
+    justify-content: flex-start;
+    z-index: 99;
+}
+
+#nav img{
+    height:50px;
+    margin-right: 100px;
+}
+#nav h4{
+    font-weight: 500;
+    margin-right: 60px;
+}
+#nav h4 a{
+    text-decoration: none;
+    color: black;
+}
+#nav h4:hover a{
+      color: #95C11E;
+      text-decoration: none;
+}
+#nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 300px;
+}
+
+#nav-part2 i{
+    margin-right: 60px;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    padding-right: 15px;
+}
+  
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: #000;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.dropdown .dropbtn:hover {
+    color: #000;
+}
+  
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #b8bebf;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: #b8bebf;
+    border-radius: 20px;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#content {
+    width: 100%;
+    height: calc(100% - 130px); 
+    position: relative; 
+    top: 130px; 
+    display: flex;
+}
+
+#left{
+    width: 35%;
+    height: 100%;
+    padding: 80px 80px;
+}
+#left h5{
+    font-size: 25px;
+    color: #535353;
+}
+
+#left h1{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+#left p{
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+#left button{
+    background-color: black;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 45px;
+    border-radius: 60px;
+    border-top-left-radius: 0px;
+}
+#left button a{
+    color: #fff;
+    text-decoration: none;
+}
+#left button:hover a{
+    color: #535353;
+}
+#left #arrow{
+    height: 200px;
+    width: 200px;
+    background-color: transparent;
+    border: 2px solid #000;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 80%;
+    left: 20%;
+    bottom: 0%;
+    transition: all ease 0.5s;
+}
+#left #arrow i{
+    font-size: 50px;
+    font-weight: 100;
+}
+
+#left #arrow:hover{
+    scale: 0.4;
+    background-color: #fff;
+}
+#right{
+    width: 65%;
+    height: 100%;    
+    position: relative;
+    padding: 120px;
+    white-space: nowrap;
+    overflow-x: auto;
+    background-color: #b8bebf;
+    border-radius: 50px;
+}
+
+#right::-webkit-scrollbar{
+    display: none;
+}
+
+.elem{
+    height: 420px;
+    width: 280px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    display: inline-block;
+    margin-right: 20px;
+}
+.elem img{
+    height: 70%;
+    width: 100%;
+    top: 6%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.elem h4{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #D0D4D5;
+    padding: 17px 34px;
+    border-radius: 6px;
+}
+.elem h5{
+    position: absolute;
+    bottom: 12%;
+    right: 0;
+    background-color: #000;
+    color: #fff;
+    font-weight: 500;
+    padding: 17px 34px;
+    border-radius: 6px;
+    font-size: 14px;
+}
